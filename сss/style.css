@@ -78,6 +78,7 @@ body{
     border-radius: 15px;
     background: #2B2C2D;
     padding-bottom: 20px;
+    box-shadow: 4px 1px 5px 2px #0000009a;
     color: white;
     margin: 10px;
 }
