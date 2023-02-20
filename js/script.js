@@ -26,9 +26,11 @@ let tickets = [
 //     }
 // }
 let dom_tickets = document.querySelector('.tickets');
-// users.forEach(el => {
-    let user = document.createElement('div');
+let a = document.querySelector('.tickets__card');
+let clon_div = a.cloneNode(true);
+
+// let user = document.createElement(clon_div);
     // user.className = "tickets__card";
-    user.innerText = "1";
-    dom_tickets.appendChild(user);
-// })
+
+// user.innerText = "1";
+dom_tickets.appendChild(clon_div);
