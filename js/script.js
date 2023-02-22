@@ -53,6 +53,7 @@ if (user_choice == 1){
                 passport: user_passport,
             }
         })
+
         let div_tickets = document.querySelector('.tickets'),
             clon_ticket = document.querySelector('.tickets__card');
 
@@ -66,6 +67,7 @@ if (user_choice == 1){
     }else{
         alert("Вы где-то не ввели свои данные");
     }
+    
 }else{
     alert("Заходите еще :)")
 }
