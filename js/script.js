@@ -35,14 +35,15 @@ alert("Вы хотите купить билет?\nНапишете `1` если
 let user_choice = +prompt("Вы хотите купить билет?Напишете `1` если да. ");
 
 if (user_choice == 1){
-    let user_route_from = prompt("Напишите от куда собираетесь ехать"),
-        user_route_to = prompt("Напишите от куда собираетесь ехать"),
-        user_info = prompt("Напишите ФИО"),
-        user_passport = prompt("Напишите ваши данные паспорта"),
+    let user_route_from    = prompt("Напишите от куда собираетесь ехать"),
+        user_route_to      = prompt("Напишите от куда собираетесь ехать"),
+        user_info          = prompt("Напишите ФИО"),
+        user_passport      = prompt("Напишите ваши данные паспорта"),
         user_data_checking = (user_route_from != "" &&
-                    user_route_to != "" && 
-                    user_info != "" && 
-                    user_passport != "" ? 1 : 0);
+                                user_route_to != "" && 
+                                user_info     != "" && 
+                                user_passport != "" ? 1 : 0);
+                                
     if (user_data_checking){
         let user_path = `${user_route_from} -> ${user_route_to}`;
         tickets.forEach(el => {
@@ -67,7 +68,6 @@ if (user_choice == 1){
     }else{
         alert("Вы где-то не ввели свои данные");
     }
-    
 }else{
     alert("Заходите еще :)")
 }
